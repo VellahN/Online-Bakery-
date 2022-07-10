@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(/images/fd.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: latto;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links .btn{
+    float: right;
+}
+.banner-title{
+    margin: 80px 130px;
+}
+.banner-title h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: monotype corsiva;
+    cursor: pointer;
+}
+.banner-title h1 span{
+    color: rgba(248, 7, 7, 0.849);
+}
+
+@media (max-width: 700px){
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title h1{
+        font-size: 40px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+}
